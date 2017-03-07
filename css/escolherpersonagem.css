@@ -1,0 +1,75 @@
+#principal{
+	background-image: url('../imagens/escolherpersonagem/fundo.png');
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+}
+
+#inicio, #ajuda,#principal,#bhiperion,#bkalick,#bomega,#personagem{
+	position: absolute;
+}
+
+#personagem{
+	z-index: 2;
+	margin-left: -435px;
+	margin-top: 70px;
+}
+
+#inicio{
+	margin-left: -495px;
+	margin-top: 15px;
+}
+
+#ajuda{
+	margin-top: 15px;
+	margin-left: 465px;
+}
+
+audio{
+	display: none;
+}
+
+#bomega{
+	margin-top: 482px;
+	margin-left: -155px;
+}
+
+#bhiperion{
+	margin-top: 482px;
+	margin-left: -40px;
+}
+
+#bkalick{
+	margin-top: 482px;
+	margin-left: 75px;
+}
+
+#box{
+	display: none;
+	width:1020px;
+	height: 600px;
+
+}
+
+#box, #fechar{
+	position: absolute;
+}
+
+#box{
+	background-image: url("../imagens/escolherpersonagem/lightbox/lightbox.png");
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	z-index: 3;
+}
+
+#fechar{
+	margin-top: 15px;
+	margin-left: 465px;
+}

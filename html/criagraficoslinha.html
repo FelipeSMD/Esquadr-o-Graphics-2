@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+ 	<meta charset="UTF-8">
+ 	<link rel="stylesheet" type="text/css" href="../css/criagraficoslinha.css">
+ 	<!--<script type="text/javascript" src="JS/jquery-2.1.4.js"></script>-->
+ 	<script type="text/javascript" src='../js/criar.js' DEFER="DEFER"></script>
+ 	<title></title>
+	 </head>
+	 <body>
+	 		<audio id="somClick" controls>
+	        <source  src="../click.wav" type="audio/wav"/>
+	          O seu navegador não suporta este formato de áudio(.wav).
+	        </audio>
+	 		
+		 	<div id='graficos'>
+		 			<img id="avancar" src="../imagens/graficodebarras/bnormais/avancar.png" onmouseover="mudaImagemOver('avancar')" onmouseout="mudaImagemOut('avancar')" onclick="pag2()"/ >	
+		 			<a href="../index.html" onClick="return confirm('Ao sair perderá seu progresso, deseja realmente sair ?')">
+		 				<img id="inicio" src="../imagens/graficodebarras/bnormais/inicio.png" onmouseover="mudaImagemOver('inicio')" onmouseout="mudaImagemOut('inicio')" onclick="mudaImagemClick('inicio')"/ >
+		 			</a> 
+		 			<a id="download" download="grafico.png">
+		 				<img id="salvar" src="../imagens/graficodebarras/bnormais/salvar.png" onmouseover="mudaImagemOver('salvar')" onmouseout="mudaImagemOut('salvar')" onClick="mudaImagemClick('salvar')"/ >
+		 			</a>
+		 			<img id="ajudahiperion" src="../imagens/graficodebarras/bnormais/ajudahiperion.png" onmouseover="mudaImagemOver('ajudahiperion')" onmouseout="mudaImagemOut('ajudahiperion')" onclick="mostra()"/ >
+		 			<img id="ajudakalick" src="../imagens/graficodebarras/bnormais/ajudakalick.png" onmouseover="mudaImagemOver('ajudakalick')" onmouseout="mudaImagemOut('ajudakalick')" onclick="mostra()"/ >
+		 			<img id="ajudaomega" src="../imagens/graficodebarras/bnormais/ajudaomega.png" onmouseover="mudaImagemOver('ajudaomega')" onmouseout="mudaImagemOut('ajudaomega')" onclick="mostra()"/ >
+		 			 
+		 				<img id="voltar" src="../imagens/graficodebarras/bnormais/voltar.png"  onmouseover="mudaImagemOver('voltar')" onmouseout="mudaImagemOut('voltar')"/  onClick="voltaPaginaCorreta(event)">
+		 			
+					<a href="criagraficosbarra.html" onClick="return confirm('Ao reiniciar perderá seu progresso, deseja realmente um arquivo novo ?')">
+		 				<img id="novo" src="../imagens/graficodebarras/bnormais/novo.png" onmouseover="mudaImagemOver('novo')" onmouseout="mudaImagemOut('novo')" onclick="mudaImagemClick('novo')"  / >
+		 			</a>
+		 			<img id="linha" src="../imagens/graficodebarras/bnormais/linha.png" onClick="clickLinha()" onmouseover="mudaImagemOver('linha')" onmouseout="mudaImagemOut('linha')" / >
+
+		 			<img id="borracha" src="../imagens/graficodebarras/bnormais/borracha.png" onClick="clickBorracha()" onmouseover="mudaImagemOver('borracha')" onmouseout="mudaImagemOut('borracha')" onclick="mudaImagemClick('borracha')"/ >
+		 			<img id="marrom" src="../imagens/graficodebarras/bnormais/marrom.png"  onmouseover="mudaImagemOver('marrom')" onmouseout="mudaImagemOut('marrom')" onclick="mudaMarrom()"/ >
+		 			<img id="cinza" src="../imagens/graficodebarras/bnormais/cinza.png" onClick="mudaCinza()" onmouseover="mudaImagemOver('cinza')" onmouseout="mudaImagemOut('cinza')" / >
+		 			<img id="malha" src="../imagens/graficodebarras/bnormais/malha.png" onClick="grid()" onmouseover="mudaImagemOver('malha')" onmouseout="mudaImagemOut('malha')" / >
+		 			<img id="rotulo" src="../imagens/graficodebarras/bnormais/rotulo.png"  onmouseover="mudaImagemOver('rotulo')" onmouseout="mudaImagemOut('rotulo')" onclick="clickRotulo()"/ >
+
+
+		 			<img id="verdelimao" src="../imagens/graficodebarras/bnormais/verdelimao.png" onClick="mudaVerdelimao()" onmouseover="mudaImagemOver('verdelimao')" onmouseout="mudaImagemOut('verdelimao')" / >
+		 			<img id="verde" src="../imagens/graficodebarras/bnormais/verde.png"  onClick="mudaVerde()" onmouseover="mudaImagemOver('verde')" onmouseout="mudaImagemOut('verde')" onclick="mudaImagemClick('verde')"/ >
+		 			<img id="vermelho" src="../imagens/graficodebarras/bnormais/vermelho.png" onClick="mudaVermelho()" onmouseover="mudaImagemOver('vermelho')" onmouseout="mudaImagemOut('vermelho')" / >
+		 			<img id="amarelo" src="../imagens/graficodebarras/bnormais/amarelo.png" onClick="mudaAmarelo()" onmouseover="mudaImagemOver('amarelo')" onmouseout="mudaImagemOut('amarelo')" onclick="mudaImagemClick('amarelo')"/ >
+		 			<img id="azul" src="../imagens/graficodebarras/bnormais/azul.png" onClick="mudaAzul()" onmouseover="mudaImagemOver('azul')" onmouseout="mudaImagemOut('azul')" onclick="mudaImagemClick('azul')"/ >
+		 			<img id="azulmarinho" src="../imagens/graficodebarras/bnormais/azulmarinho.png" onClick="mudaAzulmarinho()"onmouseover="mudaImagemOver('azulmarinho')" onmouseout="mudaImagemOut('azulmarinho')" onclick="mudaImagemClick('azulmarinho')"/ >
+		 			
+		 			<img id="preto" src="../imagens/graficodebarras/bnormais/preto.png"  onClick="mudaPretop()" onmouseover="mudaImagemOver('preto')" onmouseout="mudaImagemOut('preto')" onclick="mudaImagemClick('preto')"/ >
+		 			
+		 			<img id="pink" src="../imagens/graficodebarras/bnormais/pink.png" onClick="mudaRosa()" onmouseover="mudaImagemOver('pink')" onmouseout="mudaImagemOut('pink')" onclick="mudaImagemClick('pink')"/ >
+		 			
+		 			<img id="laranja" src="../imagens/graficodebarras/bnormais/laranja.png" onClick="mudaLaranja()" onmouseover="mudaImagemOver('laranja')" onmouseout="mudaImagemOut('laranja')" onclick="mudaImagemClick('laranja')"/ >
+
+		 			<img id="eixo" src="../imagens/graficodebarras/canvas/eixo.png"/ >
+		 			<img id="legendacanvas" src="../imagens/graficodebarras/canvas/legendacanvas.png"/ >
+
+		 			<canvas  width="400px;" height="400px;"  id="myCanvas"> Seu navegador não possui suporte para o canvas. </canvas>
+		 			<canvas  width="676px;" height="492px;"  id="canvasMaior"> Seu navegador não possui suporte para o canvas. </canvas>
+		 			
+		 			<textarea id="textotitulografico" rows="1" placeholder="Insira seu titulo aqui..." OnKeyUp="return limitaTextarea(this.value, 'textotitulografico', 'titulo')" ></textarea>
+		 			<textarea id="textolegenda1" rows="1" onchange="criaLegenda('textolegenda1')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda1', 'legenda')"></textarea>
+		 			<textarea id="textolegenda2" rows="1" onchange="criaLegenda('textolegenda2')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda2', 'legenda')"></textarea>
+		 			<textarea id="textolegenda3" rows="1" onchange="criaLegenda('textolegenda3')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda3', 'legenda')"></textarea>
+		 			<textarea id="textolegenda4" rows="1" onchange="criaLegenda('textolegenda4')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda4', 'legenda')"></textarea>
+		 			<textarea id="textolegenda5" rows="1" onchange="criaLegenda('textolegenda5')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda5', 'legenda')"></textarea>
+		 			<textarea id="textolegenda6" rows="1" onchange="criaLegenda('textolegenda6')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda6', 'legenda')"></textarea>
+		 			<textarea id="textolegenda7" rows="1" onchange="criaLegenda('textolegenda7')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda7', 'legenda')"></textarea>
+		 			<textarea id="textolegenda8" rows="1" onchange="criaLegenda('textolegenda8')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda8', 'legenda')"></textarea>
+		 			<textarea id="textolegenda9" rows="1" onchange="criaLegenda('textolegenda9')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda9', 'legenda')"></textarea>
+		 			<textarea id="textolegenda10" rows="1" onchange="criaLegenda('textolegenda10')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda10', 'legenda')"></textarea>
+		 			<textarea id="textolegenda11" rows="1" onchange="criaLegenda('textolegenda11')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda11', 'legenda')"></textarea>
+		 			<textarea id="textolegenda12" rows="1" onchange="criaLegenda('textolegenda12')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda12', 'legenda')"></textarea>
+		 			<textarea id="textolegenda13" rows="1" onchange="criaLegenda('textolegenda13')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda13', 'legenda')"></textarea>
+		 			<textarea id="textolegenda14" rows="1" onchange="criaLegenda('textolegenda14')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda14', 'legenda')"></textarea>
+		 			<textarea id="textolegenda15" rows="1" onchange="criaLegenda('textolegenda15')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda15', 'legenda')"></textarea>
+		 			<textarea id="textolegenda16" rows="1" onchange="criaLegenda('textolegenda16')" placeholder="Insira sua legenda aqui..." OnKeyUp="return limitaTextarea(this.value, 'textolegenda16', 'legenda')"></textarea>
+		 	</div>
+		 	<div id='materia'>
+		 			<img id="ajudahiperionM" src="../imagens/materia/bnormais/ajudahiperionM.png" onmouseover="mudaImagemOverMateria('ajudahiperionM')" onmouseout="mudaImagemOutMateria('ajudahiperionM')" onclick="mostraMateria()" />
+		 			<img id="ajudakalickM" src="../imagens/materia/bnormais/ajudakalickM.png" onmouseover="mudaImagemOverMateria('ajudakalickM')" onmouseout="mudaImagemOutMateria('ajudakalickM')" onclick="mostraMateria()" />
+		 			<img id="ajudaomegaM" src="../imagens/materia/bnormais/ajudaomegaM.png" onmouseover="mudaImagemOverMateria('ajudaomegaM')" onmouseout="mudaImagemOutMateria('ajudaomegaM')" onclick="mostraMateria()" />
+		 			<a href="../html/resultado.html">
+		 				<img id="avancarM" src="../imagens/materia/bnormais/avancarM.png" onclick='mudaImagemClickMateria("avancarM")' onmouseover="mudaImagemOverMateria('avancarM')" onmouseout="mudaImagemOutMateria('avancarM')"/>
+		 			</a>
+		 			
+		 			<img id="conteudoM" src="../imagens/materia/bnormais/conteudoM.png" />
+		 			
+		 			
+		 			<img id="laranjaazulM" src="../imagens/materia/bnormais/laranjaazulM.png" onmouseover="mudaImagemOverMateria('laranjaazulM')" onmouseout="mudaImagemOutMateria('laranjaazulM')" onclick='mudaLaranjaAzulM()'/>
+		 			<img id="modelosM" onclick="mostraModelos()" src="../imagens/materia/bnormais/modelosM.png" onmouseover="mudaImagemOverMateria('modelosM')" onmouseout="mudaImagemOutMateria('modelosM')"/>
+		 			<img id="novoM" src="../imagens/materia/bnormais/novoM.png" onclick='novoMateria()' onmouseover="mudaImagemOverMateria('novoM')" onmouseout="mudaImagemOutMateria('novoM')"/>
+		 			<img id="pretoM" src="../imagens/materia/bnormais/pretoM.png" onclick='pretoPreto()' onmouseover="mudaImagemOverMateria('pretoM')" onmouseout="mudaImagemOutMateria('pretoM')"/>
+		 			<img id="rosasalmonM" src="../imagens/materia/bnormais/rosasalmonM.png" onclick='mudaRosaSalmonM()' onmouseover="mudaImagemOverMateria('rosasalmonM')" onmouseout="mudaImagemOutMateria('rosasalmonM')"/>
+		 			<a id="download2" download="materia.jpg">
+		 				<img id="salvarM" src="../imagens/materia/bnormais/salvarM.png" onmouseover="mudaImagemOverMateria('salvarM')" onmouseout="mudaImagemOutMateria('salvarM')" onclick="mudaImagemClickMateria('salvarM')"/>
+		 			</a>
+		 			<img id="tituloM" src="../imagens/materia/bnormais/tituloM.png"/>
+		 			<img id="vinhoroxoM" src="../imagens/materia/bnormais/vinhoroxoM.png"/ onclick='mudaVinhoRoxoM()' onmouseover="mudaImagemOverMateria('vinhoroxoM')" onmouseout="mudaImagemOutMateria('vinhoroxoM')">
+		 			<img id="voltarM" src="../imagens/materia/bnormais/voltarM.png"/ onclick='pag1()' onmouseover="mudaImagemOverMateria('voltarM')" onmouseout="mudaImagemOutMateria('voltarM')">
+		 			<img id="fundocanvasmateria" src="../imagens/materia/canvas/fundocanvas.png"/ onclick='pag1()' >
+		 			<canvas id='myCanvas2' width='834px;' height='520px;'></canvas>
+		 			<form  method="post"  >
+	                <select id="fonte" name="time"  >
+	                   
+	                    <option value="Impact">Impact</option>
+	                    <option value="Tahoma">Tahoma</option>
+	                    <option value="Verdana">Verdana</option>
+	                    <option value="Georgia">Georgia</option>
+	                </select>
+	                <select id="fonteConteudo" name="time"  >
+
+	                    <option value="Arial">Impact</option>
+	                    <option value="Tahoma">Tahoma</option>
+	                    <option value="Verdana">Verdana</option>
+	                    <option value="Georgia">Georgia</option>
+	                </select>
+	                <a href="../index.html" onClick="return confirm('Ao sair perderá seu progresso, deseja realmente sair ?')">
+	                	<img id="inicioM" src="../imagens/materia/bnormais/inicioM.png" onmouseover="mudaImagemOverMateria('inicioM')" onmouseout="mudaImagemOutMateria('inicioM')"/>
+	                </a>
+            		</form>
+            		
+            		<span id='upload'>
+						<input type="file" id="imageLoader" name="imageLoader" onmouseover="mudaImagemOverMateria('graficoM')" onmouseout="mudaImagemOutMateria('graficoM')"/>
+						<img id="graficoM" src="../imagens/materia/bnormais/graficoM.png" onclick='colocaGrafico()' />
+					</span>
+					<textarea id="textoconteudo" name="conteudo" OnKeyUp="return limitaTextarea(this.value, 'textoconteudo', 'conteudo')" placeholder="Insira seu conteudo aqui..." width='258px' height='380px'></textarea>
+					<textarea id="textotitulo" rows="1" placeholder="Insira seu titulo aqui..." OnKeyUp="return limitaTextarea(this.value, 'textotitulo', 'titulo')"></textarea>
+		 	</div>
+		 	<div id="ajudagraficos">
+		 		<img id='opcoesajuda' name="opcoes1" class="opcoes" src="../imagens/graficodebarras/ajuda/bnormais/opcoesajuda.png" onmouseover="mudaImagemOverAjuda('opcoesajuda')" onmouseout="mudaImagemOutAjuda('opcoesajuda')" onclick="mudaTextoAjuda('opcoes1', 'opcoesajuda', 'opcoes')"/>
+		 		<img id='salvarajuda' name="salvar" src="../imagens/graficodebarras/ajuda/bnormais/salvarajuda.png" onmouseover="mudaImagemOverAjuda('salvarajuda')" onmouseout="mudaImagemOutAjuda('salvarajuda')" onclick="mudaTextoAjuda('salvar', 'salvarajuda')"/>
+
+		 		<img id='crialinhaajuda' name="criarlinha1" class="crialinha" src="../imagens/graficodebarras/ajuda/bnormais/crialinhaajuda.png" onmouseover="mudaImagemOverAjuda('crialinhaajuda')" onmouseout="mudaImagemOutAjuda('crialinhaajuda')" 
+		 		onclick="mudaTextoAjuda('criarlinha1', 'crialinhaajuda', 'crialinha')"/>
+
+		 		<img id='inserirrotuloajuda' name="inserirrotulo" src="../imagens/graficodebarras/ajuda/bnormais/inserirrotuloajuda.png" onmouseover="mudaImagemOverAjuda('inserirrotuloajuda')" onmouseout="mudaImagemOutAjuda('inserirrotuloajuda')" onclick="mudaTextoAjuda('inserirrotulo', 'inserirrotuloajuda')"/>
+
+		 		<img id='apagarajuda' name="apagar" src="../imagens/graficodebarras/ajuda/bnormais/apagarajuda.png" onmouseover="mudaImagemOverAjuda('apagarajuda')" onmouseout="mudaImagemOutAjuda('apagarajuda')" onclick="mudaTextoAjuda('apagar', 'apagarajuda')"/>
+
+		 		<img id='inserirlegendaajuda' name="inserirlegenda" src="../imagens/graficodebarras/ajuda/bnormais/inserirlegendaajuda.png" onmouseover="mudaImagemOverAjuda('inserirlegendaajuda')" onmouseout="mudaImagemOutAjuda('inserirlegendaajuda')" onclick="mudaTextoAjuda('inserirlegenda', 'inserirlegendaajuda')"/>
+
+		 		<img id='malhaajuda' name="malha" src="../imagens/graficodebarras/ajuda/bnormais/malhaajuda.png" onmouseover="mudaImagemOverAjuda('malhaajuda')" onmouseout="mudaImagemOutAjuda('malhaajuda')" onclick="mudaTextoAjuda('malha', 'malhaajuda')"/>
+
+		 		<img id='voltarajuda' name="voltar" src="../imagens/graficodebarras/ajuda/bnormais/voltarajuda.png" onmouseover="mudaImagemOverAjuda('voltarajuda')" onmouseout="mudaImagemOutAjuda('voltarajuda')" onclick="mudaTextoAjuda('voltar', 'voltarajuda')"/>
+
+		 		<img id='avancarajuda' name="avancar" src="../imagens/graficodebarras/ajuda/bnormais/avancarajuda.png" onmouseover="mudaImagemOverAjuda('avancarajuda')" onmouseout="mudaImagemOutAjuda('avancarajuda')" onclick="mudaTextoAjuda('avancar', 'avancarajuda')"/>
+
+		 		<img id='textoajuda' src="../imagens/graficodebarras/ajuda/textos/opcoes1.png"/>
+		 		<img id='fecharajuda' src="../imagens/graficodebarras/ajuda/bnormais/fecharajuda.png" onmouseover="mudaImagemOverAjuda('fecharajuda')" onmouseout="mudaImagemOutAjuda('fecharajuda')" onclick="esconde()" />
+
+		 		<img id='proximoajuda' src="../imagens/graficodebarras/bnormais/proximoajuda.png"/>
+		 		<img id='anteriorajuda' src="../imagens/graficodebarras/bnormais/anteriorajuda.png"/>
+
+		 	</div>
+
+		 	<div id="escolhamodelos">
+		 		<img id="modelo1" src="../imagens/materia/modelos/bnormais/modelo1.png" onmouseover="mudaImagemOverModelos('modelo1')" onmouseout="mudaImagemOutModelos('modelo1')" onclick="lay1()"/>
+
+		 		<img id="modelo2" src="../imagens/materia/modelos/bnormais/modelo2.png" onmouseover="mudaImagemOverModelos('modelo2')" onmouseout="mudaImagemOutModelos('modelo2')" onclick="lay2()"/>
+
+		 		<img id="fecharmodelo" src="../imagens/materia/modelos/bnormais/fecharmodelo.png" onmouseover="mudaImagemOverModelos('fecharmodelo')" onmouseout="mudaImagemOutModelos('fecharmodelo')" onclick="escondeModelos"/>
+		 	</div>
+
+		 <div id="ajudamateria">
+		 	<img id='opcoesajudamateria' name="opcoes1materia" class="opcoesmateria" src="../imagens/materia/ajudamateria/bnormais/opcoesajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('opcoesajudamateria')" onmouseout="mudaImagemOutAjudaMateria('opcoesajudamateria')" onclick="mudaTextoAjudaMateria('opcoes1materia', 'opcoesajudamateria', 'opcoesmateria')"/>
+		 		<img id='salvarajudamateria' name="salvarmateria" src="../imagens/materia/ajudamateria/bnormais/salvarajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('salvarajudamateria')" onmouseout="mudaImagemOutAjudaMateria('salvarajudamateria')" onclick="mudaTextoAjudaMateria('salvarmateria', 'salvarajudamateria')"/>
+
+		 		<img id='inserirconteudoajudamateria' name="inserirconteudomateria" class="inserirconteudomateria" src="../imagens/materia/ajudamateria/bnormais/inserirconteudoajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('inserirconteudoajudamateria')" onmouseout="mudaImagemOutAjudaMateria('inserirconteudoajudamateria')" 
+		 		onclick="mudaTextoAjudaMateria('inserirconteudomateria', 'inserirconteudoajudamateria')"/>
+
+		 		<img id='inserirgraficoajudamateria' name="inserirgraficomateria" src="../imagens/materia/ajudamateria/bnormais/inserirgraficoajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('inserirgraficoajudamateria')" onmouseout="mudaImagemOutAjudaMateria('inserirgraficoajudamateria')" onclick="mudaTextoAjudaMateria('inserirgraficomateria', 'inserirgraficoajudamateria')"/>
+
+		 		<img id='inserirtituloajudamateria' name="inserirtitulomateria" src="../imagens/materia/ajudamateria/bnormais/inserirtituloajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('inserirtituloajudamateria')" onmouseout="mudaImagemOutAjudaMateria('inserirtituloajudamateria')" onclick="mudaTextoAjudaMateria('inserirtitulomateria', 'inserirtituloajudamateria')"/>
+
+		 		<img id='modelosajudamateria' name="modelosmateria" src="../imagens/materia/ajudamateria/bnormais/modelosajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('modelosajudamateria')" onmouseout="mudaImagemOutAjudaMateria('modelosajudamateria')" onclick="mudaTextoAjudaMateria('modelosmateria', 'modelosajudamateria')"/>
+
+		 		<img id='coresajudamateria' name="coresmateria" src="../imagens/materia/ajudamateria/bnormais/coresajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('coresajudamateria')" onmouseout="mudaImagemOutAjudaMateria('coresajudamateria')" onclick="mudaTextoAjudaMateria('coresmateria', 'coresajudamateria')"/>
+
+		 		<img id='voltarajudamateria' name="voltarmateria" src="../imagens/materia/ajudamateria/bnormais/voltarajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('voltarajudamateria')" onmouseout="mudaImagemOutAjudaMateria('voltarajudamateria')" onclick="mudaTextoAjudaMateria('voltarmateria', 'voltarajudamateria')"/>
+
+		 		<img id='avancarajudamateria' name="avancarmateria" src="../imagens/materia/ajudamateria/bnormais/avancarajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('avancarajudamateria')" onmouseout="mudaImagemOutAjudaMateria('avancarajudamateria')" onclick="mudaTextoAjudaMateria('avancarmateria', 'avancarajudamateria')"/>
+
+		 		<img id='textoajudamateria' src="../imagens/materia/ajudamateria/textos/opcoes1materia.png"/>
+		 		<img id='fecharajudamateria' src="../imagens/materia/ajudamateria/bnormais/fecharajudamateria.png" onmouseover="mudaImagemOverAjudaMateria('fecharajudamateria')" onmouseout="mudaImagemOutAjudaMateria('fecharajudamateria')" onclick="escondeMateria()" />
+
+		 </div>
+  	 </body>
+</html>

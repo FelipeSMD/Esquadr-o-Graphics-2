@@ -1,0 +1,12 @@
+1-Organizamos melhor as pastas, pretendendomos colocar todos os Html's em uma unica pasta, mas isso precisará de uma analise mais aprofundada do código para trocar todos
+os seus caminhos sem o comprometimento de nenhuma função por tanto deixamos isso para o ultimo check point.
+
+2-O projeto não está rodando atualmente no chrome por problemas de segurança do navegar, esperamos que isso se resolva quando ele estiver online, atualmente o prototipo
+deve funciona em Mozila, Internet Explore e Opera.
+
+3-Alguns funçoes estão em modo representativo ou seja funciona mais não foi implementada completamente, como por exemplo a escolha do personagens que no momento só é 
+possivel escolher um embora o codigó esteja pronto para os 3, no ultimo check point todos estarão disponiveis.
+
+4- Esquecemos de falar na apresentação da parte de prevenção de erros, caso o usuario queira voltar para um lugar onde seu progresso será perdido ele é informado disso,
+fazendo assim com que lembre-se de salvar antes.
+

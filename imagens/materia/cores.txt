@@ -1,0 +1,10 @@
+laranja-#ff3d00
+azul-#000066
+
+vinho-#990000
+roxo-#660066
+
+rosa-#e6003d
+salmon-#ff6633
+
+preto-#1a1a1a

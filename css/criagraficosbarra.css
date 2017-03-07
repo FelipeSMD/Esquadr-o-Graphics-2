@@ -1,0 +1,670 @@
+#graficos{
+	background-image: url('../imagens/graficodebarras/fundo.png');
+	position: absolute;
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+}
+
+#materia{
+	background-image: url('../imagens/materia/fundo.png');
+	background-color: "white";
+	position: absolute;
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	
+}
+
+.fundoHiperion{
+	background-image: url('../imagens/graficodebarras/ajuda/fundo.png');
+}
+
+.fundoKalick{
+	background-image: url('../imagens/graficodebarras/ajuda/fundokalick.png');
+}
+
+.fundoOmega{
+	background-image: url('../imagens/graficodebarras/ajuda/fundoomega.png');
+}
+
+#ajudagraficos{
+	
+	position: absolute;
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	z-index: 4;
+	display: none;
+}
+
+#ajudamateria{
+	
+	position: absolute;
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	z-index: 4;
+	display: none;
+}
+
+#escolhamodelos{
+	background-image: url('../imagens/materia/modelos/fundo.png');
+	position: absolute;
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	z-index: 4;
+	display: none;
+}
+
+#inicio, #novo, #salvar, #barra, #borracha, #marrom, #cinza, #malha, #vermelho, #amarelo, #azul, #pink, #verdelimao, #laranja, #verde, #azulmarinho,  #preto, #rotulo, #ajudahiperion, #ajudakalick, #ajudaomega, #myCanvas, #voltar, #avancar, #eixo, #canvasMaior, #legendacanvas, #textotitulografico, 
+#textolegenda1, #textolegenda2, #textolegenda3, #textolegenda4, #textolegenda5, #textolegenda6, #textolegenda7, #textolegenda8, #textolegenda9, #textolegenda10, #textolegenda11, #textolegenda12, #textolegenda13, #textolegenda14, #textolegenda15, #textolegenda16{
+	margin-top: 15px;
+	position:absolute;
+}
+
+#inicio{
+	margin-left:34px;
+}
+
+#novo{
+	margin-left:90px;
+}
+
+#salvar{
+	margin-left:145px;
+}
+
+#barra{
+	margin-left: 217px;
+}
+
+#borracha{
+	margin-left:273px;
+}
+
+
+#rotulo{
+	margin-left: 330px;
+	
+}
+
+#malha{
+	margin-left:383px;
+}
+
+#vermelho{
+	margin-left: 460px;
+}
+
+#amarelo{
+	margin-left: 508px;
+}
+
+#azul{
+	margin-left: 556px;
+}
+
+#pink{
+	margin-left: 604px;
+	
+}
+
+#verdelimao{
+	margin-left: 652px;
+}
+
+#laranja{
+	margin-left: 700px;
+	
+}
+
+
+#verde{
+	margin-left: 748px;
+}
+
+
+
+#azulmarinho{
+	margin-left: 842px;
+}
+
+
+
+#preto{
+	margin-left: 795px;
+}
+
+#marrom{
+	margin-left:895px;
+}
+
+#cinza{
+	margin-left:945px;
+}
+
+
+#ajudahiperion, #ajudakalick, #ajudaomega{
+	margin-top: 80px;
+	margin-left: 15px
+}
+
+#ajudakalick, #ajudaomega{
+	display:none;
+}
+
+
+
+#voltar{
+	margin-left: 15px;
+	margin-top: 530px;
+}
+
+#avancar{
+	margin-left: 965px;
+	margin-top: 530px;
+}
+
+#myCanvas{
+
+	border:1px solid black; 
+	left: 195px;
+	top: 145px;
+	background-color: white;
+	z-index: 2;
+	
+}
+
+#canvasMaior{
+
+	border:1px solid black; 
+	left: 170px;
+	top: 78px;
+	background-color: white;
+	
+	
+}
+
+#eixo{
+	margin-left: 185px;
+	margin-top: 145px;
+	z-index: 2;
+}
+
+#legendacanvas{
+	margin-left: 615px;
+	margin-top: 150px;
+	z-index: 2;
+}
+audio{
+	display: none;
+}
+
+/*parte referente a materia*/
+
+#textotitulografico, #textolegenda1, #textolegenda2, #textolegenda3, #textolegenda4, #textolegenda5, #textolegenda6, #textolegenda7, #textolegenda8, #textolegenda9, #textolegenda10, #textolegenda11, #textolegenda12, #textolegenda13, #textolegenda14, #textolegenda15, #textolegenda16{
+	z-index: 3;
+	resize: none;
+	overflow: hidden;
+}
+
+#textotitulografico{
+	margin-left: 187px;
+	margin-top: 95px;
+	width: 638px;
+	font-size:32px;
+	font-family: "Impact";
+}
+
+#textolegenda1{
+	margin-left: 655px;
+	margin-top:179px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda2{
+	margin-left: 655px;
+	margin-top:202px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda3{
+	margin-left: 655px;
+	margin-top:225px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda4{
+	margin-left: 655px;
+	margin-top:249px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda5{
+	margin-left: 655px;
+	margin-top:273px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda6{
+	margin-left: 655px;
+	margin-top:296px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+#textolegenda7{
+	margin-left: 655px;
+	margin-top:319px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda8{
+	margin-left: 655px;
+	margin-top:342px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda9{
+	margin-left: 655px;
+	margin-top:366px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda10{
+	margin-left: 655px;
+	margin-top:389px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda11{
+	margin-left: 655px;
+	margin-top:412px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda12{
+	margin-left: 655px;
+	margin-top:435px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda13{
+	margin-left: 655px;
+	margin-top:458px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda14{
+	margin-left: 655px;
+	margin-top:481px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda15{
+	margin-left: 655px;
+	margin-top:504px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#textolegenda16{
+	margin-left: 655px;
+	margin-top:527px;
+	width: 150px;
+	font-size:11px;
+	font-family: "Verdana";
+}
+
+#myCanvas2, #inicioM, #salvarM, #conteudoM, #avancarM, #laranjaazulM, #modelosM, #novoM, #pretoM, #rosasalmonM, #tituloM, #vinhoroxoM, #voltarM, #fonte, #ajudahiperionM, #ajudakalickM, #ajudaomegaM, #graficoM, #fonteConteudo, #textoconteudo, #textotitulo, #fundocanvasmateria{
+	position: absolute;
+	margin-top: 15px;
+}
+
+#fonte{
+	width: 110px;
+	height: 41px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+	background: white url("../imagens/materia/bnormais/escolherfonte.png") 100% 50% no-repeat ;
+	margin-left: 370px;
+	margin-top: 15px;
+	
+}
+
+#fonteConteudo{
+	width: 110px;
+	height: 41px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+	background: white url("../imagens/materia/bnormais/escolherfonte.png") 100% 50% no-repeat ;
+	margin-left: 535px;
+	margin-top: 15px;
+	
+}
+
+#inicioM{
+	margin-left: 30px;
+}
+
+#novoM{
+	margin-left:  85px;
+}
+
+#salvarM{
+	margin-left: 140px;
+}
+
+#modelosM{
+	margin-left: 220px;
+}
+
+#graficoM{
+	margin-left: 275px;
+	margin-top: 0px;
+}
+
+#tituloM{
+	margin-left: 330px;
+}
+
+#conteudoM{
+	margin-left: 496px;
+}
+
+#laranjaazulM{
+
+	margin-left: 680px;
+}
+
+#vinhoroxoM{
+	margin-left: 760px;
+}
+
+#rosasalmonM{
+	margin-left: 840px;
+}
+
+#pretoM{
+	margin-left: 920px;
+}
+
+#ajudahiperionM{
+	margin-left: 20px;
+	margin-top: 80px;
+}
+
+#ajudakalickM{
+	margin-left: 20px;
+	margin-top: 80px;
+}
+
+#ajudaomegaM{
+	margin-left: 20px;
+	margin-top: 80px;
+}
+
+#voltarM{
+	margin-left: 15px;
+	margin-top: 535px;
+}
+
+#avancarM{
+	margin-left:965px;
+	margin-top: 535px;
+}
+
+#myCanvas2{
+	border: 1px solid black;
+	
+	margin-left: 90px;
+	margin-top: 79px;
+}
+
+#imageLoader{
+	width: 50px;
+	height: 50px;
+	
+}
+
+#upload {cursor:pointer; display:inline-block;  overflow:hidden; }
+#imageLoader {
+	cursor:pointer; 
+	position:absolute; 
+	filter:alpha(opacity=100); 
+	-moz-opacity:0.01; 
+	opacity:0.01; 
+	font-size:20px;
+	margin-left: 275px;
+	width: 42px;
+	height: 52px;
+	z-index: 2;
+}
+
+@font-face {
+font-family: SquadaOne;
+src: url(‘../fontes/SquadaOne-Regular.ttf’);
+}
+
+#textotitulo, #textoconteudo{
+	z-index: 3;
+	resize: none;
+	overflow: hidden;
+}
+
+#textotitulo{
+	
+	width: 790px;
+	font-size:36px;
+	font-family: "Impact";
+}
+
+#textoconteudo{
+	
+	width: 240px;
+	height: 380px;
+	font-family: "Verdana";
+}
+
+#fundocanvasmateria{
+	z-index: -1;
+	margin-top: 80px;
+}
+
+#opcoesajuda, #salvarajuda, #criarbarraajuda, #inserirrotuloajuda, #apagarajuda, #inserirlegendaajuda, #malhaajuda, #voltarajuda, #avancarajuda, #textoajuda, #fecharajuda, #proximoajuda, #anteriorajuda{
+	z-index: 4;
+	position: absolute;
+}
+
+#opcoesajuda{
+	margin-top: 76px;
+	margin-left: 350px;
+}
+
+#salvarajuda{
+	margin-top: 129px;
+	margin-left: 350px;
+}
+
+#criarbarraajuda{
+	margin-top: 182px;
+	margin-left: 350px;
+}
+
+#inserirrotuloajuda{
+	margin-top: 235px;
+	margin-left: 350px;
+}
+
+#apagarajuda{
+	margin-top: 288px;
+	margin-left: 350px;
+}
+
+#inserirlegendaajuda{
+	margin-top: 341px;
+	margin-left: 350px;
+}
+
+#malhaajuda{
+	margin-top: 394px;
+	margin-left: 350px;
+}
+
+#voltarajuda{
+	margin-top: 448px;
+	margin-left: 350px;
+}
+
+#avancarajuda{
+	margin-top: 501px;
+	margin-left: 350px;
+}
+
+#textoajuda{
+	margin-top: 129px;
+	margin-left: 570px;
+}
+
+#fecharajuda{
+	margin-top: 15px;
+	margin-left: 975px;
+}
+
+#proximoajuda{
+	display: none;
+	margin-top: 385px;
+	margin-left: 920px;
+}
+
+#anteriorajuda{
+	display: none;
+	margin-top: 385px;
+	margin-left: 580px;
+}
+
+#modelo1, #modelo2, #fecharmodelo{
+	z-index: 4;
+	position: absolute;
+}
+
+#modelo1{
+	margin-top: 190px;
+	margin-left: 90px;
+}
+
+#modelo2{
+	margin-top: 190px;
+	margin-left: 520px;
+}
+
+#fecharmodelo{
+	margin-top: 15px;
+	margin-left: 975px;
+}
+
+#opcoesajudamateria, #salvarajudamateria, #inserirconteudoajudamateria, #inserirgraficoajudamateria, #inserirtituloajudamateria, #modelosajudamateria, #coresajudamateria, #voltarajudamateria, #avancarajudamateria, #textoajudamateria, #fecharajudamateria, #proximoajudamateria, #anteriorajudamateria{
+	z-index: 4;
+	position: absolute;
+}
+
+#opcoesajudamateria{
+	margin-top: 76px;
+	margin-left: 350px;
+}
+
+#salvarajudamateria{
+	margin-top: 129px;
+	margin-left: 350px;
+}
+
+#inserirconteudoajudamateria{
+	margin-top: 182px;
+	margin-left: 350px;
+}
+
+#inserirgraficoajudamateria{
+	margin-top: 235px;
+	margin-left: 350px;
+}
+
+#inserirtituloajudamateria{
+	margin-top: 288px;
+	margin-left: 350px;
+}
+
+#modelosajudamateria{
+	margin-top: 341px;
+	margin-left: 350px;
+}
+
+#coresajudamateria{
+	margin-top: 394px;
+	margin-left: 350px;
+}
+
+#voltarajudamateria{
+	margin-top: 448px;
+	margin-left: 350px;
+}
+
+#avancarajudamateria{
+	margin-top: 501px;
+	margin-left: 350px;
+}
+
+#textoajudamateria{
+	margin-top: 129px;
+	margin-left: 570px;
+}
+
+#fecharajudamateria{
+	margin-top: 15px;
+	margin-left: 975px;
+}

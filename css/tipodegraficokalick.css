@@ -1,0 +1,87 @@
+#principal{
+	position: absolute;
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	
+}
+
+#inicio, #barras, #linhas, #ajuda, #fala #principal, #falaavancar, #falavoltar{
+	position:absolute;
+}
+
+#inicio{
+	margin-top: -590px;
+	margin-left: -495px;
+}
+
+#ajuda{
+	margin-top: -590px;
+	margin-left: 465px;
+}
+
+#fala{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#barras{
+	margin-top: -240px;
+	margin-left: 80px;
+}
+
+
+#linhas{
+	margin-top: -240px;
+	margin-left: 285px;
+}
+
+#falaavancar, #falavoltar{
+	z-index: 2;
+}
+
+#falaavancar{
+	display: block;
+	margin-top: -520px;
+	margin-left: 900px;
+}
+
+#falavoltar{
+	display: none;
+	margin-top: -520px;
+	margin-left: 450px;
+}
+
+audio{
+	display: none;
+}
+
+#box{
+	display: none;
+	width:1020px;
+	height: 600px;
+	
+}
+
+#box, #fechar{
+	position: absolute;
+}
+
+#box{
+	background-image: url("../imagens/tipodegrafico/lightbox/lightboxkalick.png");
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	z-index: 3;
+}
+
+#fechar{
+	margin-top: 15px;
+	margin-left: 465px;
+}

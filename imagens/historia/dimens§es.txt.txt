@@ -1,0 +1,7 @@
+FORMATO DAS IMAGENS: .png
+
+fundo-1020x600px
+BNORMAIS/BMOUSEOVER/BMOUSECLICK
+inicio-30x39px
+ajuda-30x39px
+pular-30x39px

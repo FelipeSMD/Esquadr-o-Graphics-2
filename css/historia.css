@@ -1,0 +1,67 @@
+#principal{
+	background-image: url("../imagens/historia/fundo.png");
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+
+}
+
+#pular, #inicio, #ajuda,#principal, video{
+	position: absolute;
+}
+
+#pular{
+	margin-left: 465px;
+	margin-top: 545px;
+	z-index: 2;
+}
+
+#inicio{
+	margin-left: -495px;
+	margin-top: 15px;
+	z-index: 2;
+}
+
+#ajuda{
+	margin-top: 15px;
+	margin-left: 465px;
+	z-index: 2;
+}
+
+audio{
+	display: none;
+}
+
+video{
+	margin-top: 0px;
+	margin-left: -510px;
+}
+
+#lightbox{
+	display: none;
+	width:1020px;
+	height: 600px;
+}
+
+#lightbox, #fechar{
+	position: absolute;
+	z-index: 3;
+}
+
+#lightbox{
+	background-image: url("../imagens/historia/lightbox/lightbox.png");
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+}
+
+#fechar{
+	margin-top: 15px;
+	margin-left: 465px;
+}

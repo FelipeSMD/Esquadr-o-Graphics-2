@@ -1,0 +1,30 @@
+#principal{
+	
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	display: block;
+}
+
+ #voltaraoinicio, #principal, #fundoResultado{
+	position: absolute;
+}
+
+#fundoResultado{
+	z-index: 1;
+	
+}
+
+#voltaraoinicio{
+	margin-left: 630px;
+	margin-top: 400px;
+	z-index: 2;
+}
+
+audio{
+	display: none;
+}
+

@@ -1,0 +1,52 @@
+FORMATO DAS IMAGENS: .png
+
+fundo-1020x600px
+BNORMAIS/BMOUSEOVER/BMOUSECLICK
+inicio-41x52px
+novo-41x52px
+salvar-41x52px
+barra-41x52px
+borracha-41x52px
+titulo-41x52px
+legenda-41x52px
+malha-41x52px
+ajuda-66x77px
+voltar-41x52px
+avancar-41x52px
+
+BNORMAIS/BMOUSEOVER - CORES
+vermelho(#E60000)-32x37px
+amarelo(#FFCC00)-32x37px
+azul(#0014FF)-32x37px
+rosa(#D90351)-32x37px
+verdelimao(#8AF005)-32x37px
+laranja(#FF6300)-32x37px
+roxo(#990099)-32x37px
+verde(#006633)-32x37px
+dourado(#E68005)-32x37px
+azulmarinho(#000066)-32x37px
+cinza(#808080)-32x37px
+preto(#000000)-32x37px
+
+BMOUSECLICK - CORES
+vermelho(#E60000)-34x40px
+amarelo(#FFCC00)-34x40px
+azul(#0014FF)-34x40px
+rosa(#D90351)-34x40px
+verdelimao(#8AF005)-34x40px
+laranja(#FF6300)-34x40px
+roxo(#990099)-34x40px
+verde(#006633)-34x40px
+dourado(#E68005)-34x40px
+azulmarinho(#000066)-34x40px
+cinza(#808080)-34x40px
+preto(#000000)-34x40px
+
+CANVAS
+canvasmaior (área contando construção do gráfico, titulo e legenda)-656x527px
+titulo do gráfico-617x60px
+eixo(x,y)-454x454px
+canvas(construção do gráfico)-433x433px
+legenda-178x179px
+cor do grid (#F3F3F3)
+

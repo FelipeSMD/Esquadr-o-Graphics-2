@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/historia.css">
+	<script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+	<script rel="javascript" type="text/javascript" src="../js/historia.js" DEFER="DEFER"></script>
+	<title></title>
+</head>
+<body>
+	<audio id="somClick" controls>
+		<source  src="../click.wav" type="audio/wav"/>
+		O seu navegador não suporta este formato de áudio(.wav).
+	</audio>
+	<center>
+		<div id="principal">
+			<a href="escolherpersonagem.html">
+				<img id="pular" src="../imagens/historia/bnormais/pular.png" onmouseover="mudaImagemOver('pular')" onmouseout="mudaImagemOut('pular')" onclick="mudaImagemClick('pular')"/ > 
+			</a>
+			<a href="../index.html">
+				<img id="inicio" src="../imagens/historia/bnormais/inicio.png" onmouseover="mudaImagemOver('inicio')" onmouseout="mudaImagemOut('inicio')" onclick="mudaImagemClick('inicio')"/ >
+			</a> 
+			<img id="ajuda" src="../imagens/historia/bnormais/ajuda.png" onmouseover="mudaImagemOver('ajuda')" onmouseout="mudaImagemOut('ajuda')" onclick="mostra()" / > 
+			<video width="1020" height="600" controls autoplay>
+			  <source src="../intro.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		<div id="lightbox">
+			<img id='fechar'src="../imagens/historia/lightbox/fechar.png" onclick="esconde()" />
+		</div>
+	</center>
+</body>
+</html>

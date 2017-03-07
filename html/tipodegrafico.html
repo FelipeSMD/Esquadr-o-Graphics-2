@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/tipodegrafico.css">
+	<script rel="javascript" type="text/javascript" src="../js/tipodegrafico.js" DEFER="DEFER"></script>
+	<title></title>
+</head>
+<body>
+	<audio id="somClick" controls>
+		<source  src="../click.wav" type="audio/wav"/>
+		O seu navegador não suporta este formato de áudio(.wav).
+	</audio>
+	<center>
+		<div id='principal'>
+			<img id="fala" src="../imagens/tipodegrafico/fundohiperion1.png"/> 
+			<a href="../index.html">
+				<img id="inicio" src="../imagens/tipodegrafico/bnormais/inicio.png" onmouseover="mudaImagemOver('inicio')" onmouseout="mudaImagemOut('inicio')" onclick="mudaImagemClick('inicio')">
+			</a>
+			<a href="criagraficosbarra.html">
+				<img id="barras" src="../imagens/tipodegrafico/bnormais/barras.png" onmouseover="mudaImagemOver('barras')" onmouseout="mudaImagemOut('barras')" onclick="mudaImagemClick('barras')"/ > 
+			</a>
+			<a href="criagraficoslinha.html">
+				<img id="linhas" src="../imagens/tipodegrafico/bnormais/linhas.png" onmouseover="mudaImagemOver('linhas')" onmouseout="mudaImagemOut('linhas')" onclick="mudaImagemClick('linhas')"/ > 
+			</a>
+			<img id="ajuda" src="../imagens/tipodegrafico/bnormais/ajuda.png" onmouseover="mudaImagemOver('ajuda')" onmouseout="mudaImagemOut('ajuda')" onclick="mostra()" onclick="mudaImagemClick('ajuda')"/ > 
+			<img id="falaavancar" src="../imagens/tipodegrafico/bnormais/falaavancar.png" onmouseover="mudaImagemOver('falaavancar')" onmouseout="mudaImagemOut('falaavancar')"  onclick="avancarFala()"/ >
+			<img id="falavoltar" src="../imagens/tipodegrafico/bnormais/falavoltar.png" onmouseover="mudaImagemOver('falavoltar')" onmouseout="mudaImagemOut('falavoltar')"  onclick="avancarFala()"/ >
+			
+		</div>
+
+		<div id='box'>
+			<img id='fechar'src="../imagens/tipodegrafico/bnormais/fechar.png" onclick="esconde()" onmouseover="mudaImagemOver('fechar')" onmouseout="mudaImagemOut('fechar')" />
+		</div>
+	</center>
+</body>
+</html>

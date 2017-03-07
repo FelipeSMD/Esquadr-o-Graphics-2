@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/escolherpersonagem.css">
+	
+	<script rel="javascript" type="text/javascript" src="../js/escolherpersonagem.js"></script>
+	<title></title>
+</head>
+<body>
+	<audio id="somClick" controls>
+		<source  src="../click.wav" type="audio/wav"/>
+		O seu navegador não suporta este formato de áudio(.wav).
+	</audio>
+	<center>
+		<div id="principal">
+			<a href="../index.html">
+				<img id="inicio" src="../imagens/escolherpersonagem/bnormais/inicio.png" onmouseover="mudaImagemOver('inicio')" onmouseout="mudaImagemOut('inicio')" onclick="mudaImagemClick('inicio')"/ > 
+			</a>
+
+			<img id="ajuda" src="../imagens/escolherpersonagem/bnormais/ajuda.png" onmouseover="bioHiperion()" onmouseout="mudaImagemOut('ajuda')" onclick="mostra()"/ >
+			<a href="tipodegrafico.html">
+				<img id="bhiperion" src="../imagens/escolherpersonagem/bnormais/bhiperion.png" onmouseover="bioHiperion()" onmouseout="mudaImagemOut('bhiperion')" onclick="escolhidoHiperion()"/ >
+			</a> 
+			<a href="tipodegraficokalick.html">
+				<img id="bkalick" src="../imagens/escolherpersonagem/bnormais/bkalick.png" onmouseover="bioKalick()" onmouseout="mudaImagemOut('bkalick')" onclick="escolhidoKalick()"/ > 
+			</a> 
+			<a href="tipodegraficoomega.html">
+				<img id="bomega" src="../imagens/escolherpersonagem/bnormais/bomega.png" onmouseover="bioOmega()" onmouseout="mudaImagemOut('bomega')" 
+				onclick="escolhidoOmega()"/ > 
+			</a> 
+			<img id="personagem" src="../imagens/escolherpersonagem/bio/biohiperion.png" / > 
+		</div>
+		<div id='box'>
+			<img id='fechar'src="../imagens/escolherpersonagem/bnormais/fechar.png" onclick="esconde()" onmouseover="mudaImagemOver('fechar')" onmouseout="mudaImagemOut('fechar')" />
+		</div>
+	</center>
+</body>
+</html>

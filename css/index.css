@@ -1,0 +1,68 @@
+#pag1{
+	background-image: url("../imagens/telainicial/fundo.png"); 
+  width: 1020px;
+  height: 600px;
+	left:50%;
+  top: 50%;
+	margin-left: -510px;
+  margin-top: -300px;
+	
+}
+
+#box{
+	background-image: url("../imagens/telainicial/lightbox/fundo.png"); 
+	width: 1020px;
+	height: 600px;
+	left:50%;
+	top: 50%;
+	margin-left: -510px;
+	margin-top: -300px;
+	z-index: 2;
+	display: none;
+	position: absolute;
+}
+
+#iniciar, #face, #ajuda, #gdais,#pag1,#logo{
+	position: absolute;
+	z-index: 0;
+
+}
+
+#iniciar{
+	margin-top: 382px;
+	margin-left: 480px; 
+	
+}
+
+#face{
+	margin-top: 555px;
+	margin-left: 15px;
+	
+}
+
+#ajuda{
+	margin-top: 15px;
+	margin-left: 975px;
+}
+
+#gdais{
+	margin-top: 555px;
+	margin-left: 935px;
+}
+
+audio{
+	display: none;
+}
+
+
+
+#logo{
+	margin-left: 240px;
+	margin-top: 95px;
+}
+
+#fechar{
+	margin-top: 15px;
+	margin-left: 975px;
+}
+
